@@ -2,4 +2,5 @@
 
 
 Hamze's Sida (BråvallaGymnasiet) 
-EE20DA/WEUWEB01 Webbutveckling 1
+WEUWEB01 Webbutveckling 1
+EE20DA
