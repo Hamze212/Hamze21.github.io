@@ -2,7 +2,23 @@
 <HTML>
 
     <HEAD>
-    
+
+    <script language="JavaScript"></script>
+        <TITLE>JavaScript test</TITLE>
+        <SCRIPT LANGUAGE="JavaScript">
+        function koll() {
+          var ant=0;
+          if (document.frageForm.fraga1[2].checked) ant=ant+1;
+          if (document.frageForm.fraga2[1].checked) ant=ant+1;
+          if (document.frageForm.fraga3[1].checked) ant=ant+1;
+          if (document.frageForm.fraga4[1].checked) ant=ant+1;
+          if (document.frageForm.fraga5[2].checked) ant=ant+1;
+          if (document.frageForm.fraga6[0].checked) ant=ant+1;
+          if (ant <6) alert("Du har "+ant+" rätt. Du måste öva mera!") 
+          else alert("Du har "+ant+" korrekta svar. Bra!");
+        }
+      </SCRIPT>
+
     <TITLE>Hamze's Sida</title>
         
     <BODY background="bckgrnd2.png">
@@ -28,26 +44,53 @@
             <!--Home-->
         <table border="0" align="CENTER" width="50%">
         <tr><td>
-            <tr>
-                <td>
-                    <h1><font face="Candara" size="10" color="BLACK">Tjo!</font></h1>
-                    <h1><font face="Candara" size="5" color="BLACK">Working... <br>Kom tillbaka en annan dag!</font></h1>
-                </td>
-                <td>
-                    <img src="img3.png" height="250">
-                </td>
-            </tr>
+        
+            <FORM NAME="frageForm" align="CENTER">
+                <H1><font face="Candara" size="7">Quiz Time!</font></H1>
+                <p>
+                <h1><font face="Candara" size="5">Q.1 Hur många tidzoner har Ryssland?</font></h1>
+                <p>
+                  <INPUT TYPE="radio" NAME="fraga1" ><font face="Candara" size="4">6</font></>
+                  <INPUT TYPE="radio" NAME="fraga1"><font face="Candara" size="4">4</font></>
+                  <INPUT TYPE="radio" NAME="fraga1"><font face="Candara" size="4">11</font></>
+                <P>      
+                      <h1><font face="Candara" size="5">Q.2 Vilka två grundade M&M?</font></h1>
+                <p>
+                  <INPUT TYPE="radio" NAME="fraga2"><font face="Candara" size="4">Donald Mark & Jacob Mason</font></>
+                  <INPUT TYPE="radio" NAME="fraga2"><font face="Candara" size="4">Forrest Mars & Bruce Marrie</font></>
+                  <INPUT TYPE="radio" NAME="fraga2"><font face="Candara" size="4">Bruce Marrie & Mars Mayson </font></>
+                <P>
+                      <h1><font face="Candara" size="5">Q.3 Vem uppfann Algebra och kallas "Father of Algebra"?</font></h1>
+                <p>
+                  <INPUT TYPE="radio" NAME="fraga3"><font face="Candara" size="4">Thales</>
+                  <INPUT TYPE="radio" NAME="fraga3"><font face="Candara" size="4">>Muhammad Ibn Musa</>
+                  <INPUT TYPE="radio" NAME="fraga3"><font face="Candara" size="4">Arkimedes</>
+                <P>
+                      <h1><font face="Candara" size="5">Q.4 Vad kallas kråkflock på engelska?</font></h1>
+                <p>
+                  <INPUT TYPE="radio" NAME="fraga4" ><font face="Candara" size="4">Crews</font></>
+                  <INPUT TYPE="radio" NAME="fraga4" ><font face="Candara" size="4">Murder of crows</font></>
+                  <INPUT TYPE="radio" NAME="fraga4" ><font face="Candara" size="4">Harassment of crows</font></>
+                <P>
+                      <h1><font face="Candara" size="5">Q.5 Vilken land har rosa som toalettpapper</font></h1>
+                <p>
+                  <INPUT TYPE="radio" NAME="fraga5"><font face="Candara" size="4">Nederländerna</font></>
+                  <INPUT TYPE="radio" NAME="fraga5"><font face="Candara" size="4">Vietnam</font></>
+                  <INPUT TYPE="radio" NAME="fraga5"><font face="Candara" size="4">Frankrike</font></>
+                <P> 
+                      <h1><font face="Candara" size="5">Q.6 Hur många hjärtor har bläckfiskar?</font></h1>
+                <p>
+                  <INPUT TYPE="radio" NAME="fraga6" ><font face="Candara" size="4">3</font></>
+                  <INPUT TYPE="radio" NAME="fraga6" ><font face="Candara" size="4">1</font></>
+                  <INPUT TYPE="radio" NAME="fraga6" ><font face="Candara" size="4">2</font></>
+                <P>
+                <INPUT TYPE="submit" value="Kontrollera Svar" onClick="koll();">
+                </FORM>
+            
+        </td></tr>
         </table>
         </td></tr>
         <!--Home end-->
     </BODY>
-
+  
     </HTML> 
-<!--
-    Fråga 1 = Vilken fisk var det som blev modifierad av en Canadian scientist?
-    Fråga 2 = Vad gjorde fisken när den blev kastad tillbaka i havet?
-    Fråga 3 = Bävern har en speciell ingrediens som används idag i produkter vilken är det?
-    Fråga 4 = Vilken stenfrukt dödar mer människor än hajar årligen?
-    Fråga 5 = Vad är Avokado frukt eller grönsak?
-    Fråga 6 = Vilken frukt smakar som chockladpudding och växer runt varma klimat?
--->
