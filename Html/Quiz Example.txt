@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<script language="JavaScript"></script>
+  <TITLE>JavaScript test</TITLE>
+  <SCRIPT LANGUAGE="JavaScript">
+  function koll() {
+    var ant=0;
+    if (document.frageForm.fraga1[1].checked) ant=ant+1;
+    if (document.frageForm.fraga2[2].checked) ant=ant+1;
+    if (document.frageForm.fraga3[0].checked) ant=ant+1;
+    if (document.frageForm.fraga4[0].checked) ant=ant+1;
+    if (document.frageForm.fraga5[2].checked) ant=ant+1;
+    if (document.frageForm.fraga6[1].checked) ant=ant+1;
+    if (ant <6) alert("Du har "+ant+" rätt. Du måste öva mera!") 
+    else alert("Du har "+ant+" korrekta svar. Bra!");
+  }
+</SCRIPT>
+  
+</HEAD>
+<BODY bgcolor="#F4FFFF" link="#0000FF">
+<FORM NAME="frageForm">
+<H2>
+<B>
+Musikteorifrågor:
+</H2>
+</B>
+<P>
+<H4>
+<B>
+Svara på respektive fråga genom att klicka på rätt knapp!
+<P>
+Kontrollera sedan hur många rätt Du har!
+<P>
+Om Du vill göra om testen trycker Du bara på den uppåtgående pilen!
+</H4>
+</B>
+<P>
+1.Vad heter ackordet?
+<INPUT TYPE="radio" NAME="fraga1" >d-moll</>
+<INPUT TYPE="radio" NAME="fraga1">D-dur</>
+<INPUT TYPE="radio" NAME="fraga1">e-moll</>
+<P>      
+2.Vad heter notvärdet?
+<INPUT TYPE="radio" NAME="fraga2">Åttondelsnot</>
+<INPUT TYPE="radio" NAME="fraga2">Halvnot</font></>
+<INPUT TYPE="radio" NAME="fraga2">Sextondelsnot</>
+<P>
+3.Vad heter tonen?
+<INPUT TYPE="radio" NAME="fraga3">G</>
+<INPUT TYPE="radio" NAME="fraga3">E</>
+<INPUT TYPE="radio" NAME="fraga3">H</>
+<P>
+<B>
+4.Vad heter intervallet?
+<INPUT TYPE="radio" NAME="fraga4" >Stor sext (S6)</>
+<INPUT TYPE="radio" NAME="fraga4" >Ren kvint (R5)</>
+<INPUT TYPE="radio" NAME="fraga4" >Stor ters (S3)</>
+</B>
+<P>
+5.Vad heter tonen?<img border="2" src="ex5.jpg" width="99" height="69">
+<P>
+<B><INPUT TYPE="radio" NAME="fraga5">fiss 2</B>
+<P>
+<B><INPUT TYPE="radio" NAME="fraga5">ess 2</B>
+<P>
+<B><INPUT TYPE="radio" NAME="fraga5">diss 2</B>
+<P>      
+6.Vad heter följande tonart?
+<INPUT TYPE="radio" NAME="fraga6" >Ass-dur</>
+<INPUT TYPE="radio" NAME="fraga6" >Ess-dur</>
+<INPUT TYPE="radio" NAME="fraga6" >E-dur</>
+<P>
+<INPUT TYPE="button" VALUE="Kontrollera Dina Svar Här" onClick="koll();">
+</FORM>
+</BODY>
+</HTML>
